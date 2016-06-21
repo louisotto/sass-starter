@@ -1,0 +1,103 @@
+button {
+    &:focus,
+    &:active {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+.btn {
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $button-bg;
+    border: $button-border-style;
+    border-radius: $button-border-radius;
+    font-family: $button-font-family;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    letter-spacing: $button-letter-spacing;
+    text-decoration: none;
+    text-transform: $button-font-transform;
+    color: $button-font-color;
+    cursor: pointer;
+    transition: all $transition-duration $transition-timing-function;
+    &:visited {
+        background-color: $button-bg;
+        border: $button-border;
+        color: $button-font-color;
+        text-decoration: none;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $button-bg-hover;
+        border-color: $button-border-color-hover;
+        color: $button-font-color-hover;
+        text-decoration: none;
+    }
+}
+
+// primary
+.btn--primary {
+    background-color: $button-primary-bg;
+    border-color: $button-primary-border-color;
+    color: $button-primary-font-color;
+    &:visited {
+        background-color: $button-primary-bg;
+        border-color: $button-primary-border-color;
+        color: $button-primary-font-color;
+        text-decoration: none;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $button-primary-bg-hover;
+        border-color: $button-primary-border-color-hover;
+        color: $button-primary-font-color-hover;
+    }
+}
+
+// mini
+.btn--mini {
+    padding: 3px 12px 4px;
+    font-size: $button-mini-font-size;
+}
+
+a.btn--mini {
+    padding-top: 0;
+    padding-bottom: 1px;
+}
+
+// small
+.btn--small {
+    padding: 6px 20px;
+    font-size: $button-small-font-size;
+}
+
+a.btn--small {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+// large
+.btn--large {
+    padding: 10px 24px;
+    font-size: $button-large-font-size;
+}
+
+a.btn--large {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn--block {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+}

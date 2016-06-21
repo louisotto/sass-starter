@@ -1,0 +1,57 @@
+// Helpers
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Use Retina image backgrounds for 2x displays
+@mixin retinaBackground($url) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+        background-image: url($url);
+        background-repeat: no-repeat;
+    }
+}
+
+// Media Queries
+// A few common sizes are listed, feel free to add your own!
+
+@mixin bp($point) {
+
+    $mobile: "(min-width : 30em)"; // $mobile     480px       30rem
+    $ipad-v: "(min-width : 48em)"; // $ipad-v     768px       48rem
+    $ipad-h: "(min-width : 64em)"; // $ipad-h     1024px      64rem
+    $laptop: "(min-width : 80em)"; // $laptop     1280px      80rem
+    $larger: "(min-width : 90em)"; // $larger     1440px      90rem
+
+    @if $point==mobile {
+        @media #{$mobile} {
+            @content;
+        }
+    }
+    @else if $point==ipad-v {
+        @media #{$ipad-v} {
+            @content;
+        }
+    }
+    @else if $point==ipad-h {
+        @media #{$ipad-h} {
+            @content;
+        }
+    }
+    @else if $point==laptop {
+        @media #{$laptop} {
+            @content;
+        }
+    }
+    @else if $point==larger {
+        @media #{$larger} {
+            @content;
+        }
+    }
+}

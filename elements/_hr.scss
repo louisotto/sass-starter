@@ -1,0 +1,14 @@
+hr {
+    clear: both;
+    display: block;
+    margin: ($vertical - spacing) 0;
+    padding: 0;
+    height: 1 px;
+    border: 0;
+    border - bottom: $border;
+
+    @media(-webkit - min - device - pixel - ratio: 2),
+    (min - resolution: 192 dpi) {
+        border - width: .5 px;
+    }
+}

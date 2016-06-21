@@ -1,0 +1,179 @@
+// LAYOUT  ====================================================
+
+// Set up Susy Grid if needed
+
+// $susy: (
+  // columns: 12,
+  // gutters: 1/5,
+  // math: fluid,
+  // output: float,
+  // gutter-position: inside,
+  // last-flow: to
+// );
+
+$vertical-spacing                   : 1.35rem;
+
+
+// TYPOGRAPHY  ================================================
+
+
+// Fonts
+@font-face {
+  font-family: ' ';
+  src: url(' ') format('woff2'),
+       url(' ') format('woff'),
+       url(' ') format('truetype');
+}
+
+// Sizing & Spacing
+$font-size-plus-seven               : 56px;
+$font-size-plus-six                 : 42px;
+$font-size-plus-five                : 38px;
+$font-size-plus-four                : 32px;
+$font-size-plus-three               : 24px;                       
+$font-size-plus-two                 : 20px;
+$font-size-plus-one                 : 18px;
+$font-size                          : 16px; // Global
+$font-size-minus-one                : 14px;
+$font-size-minus-two                : 12px;
+$font-size-minus-three              : 10px;
+
+$font-family                        : Helvetica, Arial, sans-serif; // Define paragraph font stack
+$font-color                         : #111;
+$font-lineheight                    : 1.5;
+$font-weight                        : 400;
+
+$alt-font-family                    : Georgia, serif; // Define complimentary font stack
+$alt-font-color                     : #555;
+$alt-font-lineheight                : $font-lineheight;
+$alt-font-weight                    : 300;
+
+$heading-font-family                : Helvetica, Arial, sans-serif; // Define heading font stack
+$heading-font-color                 : inherit;
+$heading-lineheight                 : $font-size * 1.15;
+$heading-font-weight                : 700;
+
+
+// Colours  ===================================================
+
+
+// Base
+$base-bg                            : #f5f5f5;
+$base-bg-dark                       : darken($base-bg, 10%);
+$base-bg-darker                     : darken($base-bg, 20%);
+
+// Primary
+$primary-color                      : #bada55; // Define primary color
+$primary-color-light                : lighten($primary-color, 10%);
+$primary-color-lighter              : lighten($primary-color, 20%);
+$primary-color-dark                 : darken($primary-color, 10%);
+$primary-color-darker               : darken($primary-color, 20%);
+
+// Secondary
+$secondary-color                    : #004400; // Define secomdary color
+$secondary-color-light              : lighten($secondary-color, 10%);
+$secondary-color-lighter            : lighten($secondary-color, 20%);
+$secondary-color-dark               : darken($secondary-color, 10%);
+$secondary-color-darker             : darken($secondary-color, 20%);
+
+// Tertiary
+$tertiary-color                     : #669966; // Define tertiary color
+$tertiary-color-light               : lighten($tertiary-color, 10%);
+$tertiary-color-lighter             : lighten($tertiary-color, 20%);
+$tertiary-color-dark                : darken($tertiary-color, 10%);
+$tertiary-color-darker              : darken($tertiary-color, 20%);
+
+// Links
+$link-color                         : $primary-color;
+$link-color-hover                   : $secondary-color;
+$link-color-visited                 : $link-color;
+$link-color-focus                   : $secondary-color;
+
+
+// TEXTURE  ===================================================
+
+
+$border-color                       : $primary-color;
+$border-style                       : solid;
+$border-width                       : 1px; // Define border width
+$border-radius                      : 0px; // Define border radius
+$border                             : $border-width $border-style $border-color;
+
+
+// Buttons  ===================================================
+
+
+// Borders
+$button-border-color                : $base-bg-dark;
+$button-border-style                : none;
+$button-border-width                : 0px;
+$button-border-radius               : 0px;
+$button-border                      : $button-border-width $button-border-style $button-border-color;
+
+// Typography
+$button-font-family                 : $alt-font-family;
+
+$button-font-size                   : $font-size-plus-one;
+$button-large-font-size             : $font-size-plus-three;
+$button-small-font-size             : $font-size;
+$button-mini-font-size              : $font-size-minus-one;
+
+$button-letter-spacing              : 0;
+$button-font-transform              : none;
+$button-font-weight                 : normal;
+
+// Colors
+$button-font-color                  : $font-color;
+$button-bg                          : $base-bg;
+$button-bg-hover                    : $base-bg-dark;
+$button-border-color-hover          : $base-bg-darker;
+$button-font-color-hover            : $button-font-color;
+
+// Primary buttons
+$button-primary-bg                  : $primary-color;
+$button-primary-border-color        : $primary-color-dark;
+$button-primary-font-color          : #fff;
+
+$button-primary-bg-hover            : $primary-color-dark;
+$button-primary-border-color-hover  : $primary-color-darker;
+$button-primary-font-color-hover    : $button-primary-font-color;
+
+
+// Forms ======================================================
+
+
+// Fonts
+$form-font-family                   : $font-family;
+$form-font-color                    : $font-color;
+
+// Inputs
+$input-padding                      : 6px 11px;
+$input-bg                           : #fff;
+
+$input-border-color                 : $border-color;
+$input-border-color-hover           : $border-color;
+$input-border-color-focus           : $border-color;
+$input-border-style                 : $border-style;
+$input-border-width                 : $border-width;
+$input-border-radius                : $border-radius;
+
+$input-font-family                  : $font-family;
+$input-font-size                    : $font-size;
+$input-font-color                   : $font-color;
+$input-placeholder-color            : $font-color;
+$input-placeholder-font-size        : $font-size;
+
+$textarea-min-height                : 150px;
+
+// Labels
+$label-font-color                   : $font-color;
+$label-font-family                  : $font-family;
+$label-font-size                    : $font-size;
+
+
+// Miscellaneous ==============================================
+
+
+// Animation
+$transition-duration                : .25s;
+$transition-timing-function         : ease;
